@@ -12,7 +12,8 @@ player.on('timeupdate',throttle(function (data) {
   localStorage.setItem('videoplayer-current-time', data.seconds);
   const timePlay = localStorage.getItem("videoplayer-current-time")
   console.log(timePlay);
-},1000));
+},1000
+));
 
 const videoPlayer = document.getElementById('vimeo-player');
 
