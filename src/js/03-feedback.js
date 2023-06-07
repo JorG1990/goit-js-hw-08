@@ -13,8 +13,7 @@ form.addEventListener(`input`, throttle(function(){
     //console.log(dataObj);
     localStorage.setItem('feedback-form-state', JSON.stringify(dataObj));
     localStorage.getItem('feedback-form-state');
-}, 500
-));
+}, 500));
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
